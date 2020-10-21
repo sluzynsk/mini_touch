@@ -113,7 +113,8 @@ static void guiTask(void *pvParameter)
 
     static lv_color_t buf1[DISP_BUF_SIZE];
     static lv_color_t buf2[DISP_BUF_SIZE];
-    uint32_t size_in_pix = DISP_BUF_SIZE;
+    static lv_disp_buf_t disp_buf;
+    uint32_t size_in_px = DISP_BUF_SIZE;
 
     lv_disp_buf_init(&disp_buf, buf1, buf2, size_in_px);
 
